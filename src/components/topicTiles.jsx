@@ -12,9 +12,11 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: "white",
   borderRadius:5,
-  opacity: 1, // Initially invisible
-  transition: 'opacity 0.5s ease-in-out', // Smooth fade-in animation
+   opacity: 1, // Initially invisible
+ transition: 'height 0.3s ease-in-out, width 0.3s ease-in-out, background-image 0.3s ease-in-out', // Combine transitions
   ":hover":{
+    height: '50%', // Increase height on hover
+    width: '75%', // Increase width on hover
     backgroundImage: "linear-gradient(to right, #000101, #00111a, #001833, #021747, #400048)",
    cursor:"pointer",
    color:"blue"
